@@ -71,13 +71,15 @@ local function runfiles()
 	love.mousepressed = nil
 	keyboard = nil
 	love.keypressed = nil
-	address, ishover, status, runtext, stage, socket, json, key, files = nil, nil, nil, nil, nil, nil, nil, nil, nil
+	ishover, status, runtext, stage, socket, json, key, files = nil, nil, nil, nil, nil, nil, nil, nil
 	collectgarbage()
 	if love.filesystem.getInfo("recived_data/main.lua") ~= nil then
 		love.graphics.setColor(1, 1, 1)
 		love.graphics.setNewFont(12)
 		chunk = love.filesystem.load("recived_data/main.lua")
+		love.load = function () end
 		chunk()
+		love.load()
 	end
 end
 local function start()
