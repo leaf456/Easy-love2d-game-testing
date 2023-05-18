@@ -8,5 +8,5 @@ Allows you to easily test your love2d game (or really any lua game) without havi
 5. on the devices you installed the /love transfer/client folder in step 1, type the ip of the server in. On computers, use the keyboard. Otherwise, use the touchscreen and pad.
 NOTE: YOU DO NOT HAVE TO TYPE THE PORT
 6. press start. If it worked, status will be 200. Then click start again and the game will run!
-# licence
+# license
 I don't really care if you use it, copy it, modify it. I do know that I used a json library, however for the actual code that I wrote, you can do whatever you want with it.
